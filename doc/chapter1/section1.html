@@ -1,0 +1,743 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.1 Docker-Compose部署 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于洞察2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1.快速开始
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    1.1 Docker-Compose部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    1.2 版本更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="section3.html">
+            
+                <a href="section3.html">
+            
+                    
+                    1.3 源码部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="section4.html">
+            
+                <a href="section4.html">
+            
+                    
+                    1.4 服务配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="section5.html">
+            
+                <a href="section5.html">
+            
+                    
+                    1.5 从洞察1迁移数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/">
+            
+                <a href="../chapter2/">
+            
+                    
+                    2.使用举例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/section1.html">
+            
+                <a href="../chapter2/section1.html">
+            
+                    
+                    2.1 添加资产和应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/section2.html">
+            
+                <a href="../chapter2/section2.html">
+            
+                    
+                    2.2 添加漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/section3.html">
+            
+                <a href="../chapter2/section3.html">
+            
+                    
+                    2.3 漏洞处理流程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../chapter2/section3_1.html">
+            
+                <a href="../chapter2/section3_1.html">
+            
+                    
+                    2.3.1 安全官（后台）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../chapter2/section3_2.html">
+            
+                <a href="../chapter2/section3_2.html">
+            
+                    
+                    2.3.2 普通用户（前台）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/">
+            
+                <a href="../chapter3/">
+            
+                    
+                    3.功能与配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter4/section1.html">
+            
+                <a href="../chapter4/section1.html">
+            
+                    
+                    3.1 面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter4/section2.html">
+            
+                <a href="../chapter4/section2.html">
+            
+                    
+                    3.2 漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter4/section3.html">
+            
+                <a href="../chapter4/section3.html">
+            
+                    
+                    3.3 资产
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter4/section4.html">
+            
+                <a href="../chapter4/section4.html">
+            
+                    
+                    3.4 用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter4/section5.html">
+            
+                <a href="../chapter4/section5.html">
+            
+                    
+                    3.5 知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter4/section6.html">
+            
+                <a href="../chapter4/section6.html">
+            
+                    
+                    3.6 扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter4/section7.html">
+            
+                <a href="../chapter4/section7.html">
+            
+                    
+                    3.7 配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="../chapter4/section7-1.html">
+            
+                <a href="../chapter4/section7-1.html">
+            
+                    
+                    3.7.1 系统配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.2" data-path="../chapter4/section7-2.html">
+            
+                <a href="../chapter4/section7-2.html">
+            
+                    
+                    3.7.2 全局变量配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter4/section8.html">
+            
+                <a href="../chapter4/section8.html">
+            
+                    
+                    3.8 默认规则
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../chapter4/section8-1.html">
+            
+                <a href="../chapter4/section8-1.html">
+            
+                    
+                    3.8.1 逾期计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2" data-path="../chapter4/section8-2.html">
+            
+                <a href="../chapter4/section8-2.html">
+            
+                    
+                    3.8.2 积分称号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../chapter4/section9.html">
+            
+                <a href="../chapter4/section9.html">
+            
+                    
+                    3.9 其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter5/">
+            
+                <a href="../chapter5/">
+            
+                    
+                    4.常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter5/FAQ.html">
+            
+                <a href="../chapter5/FAQ.html">
+            
+                    
+                    4.1 FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter5/section2.html">
+            
+                <a href="../chapter5/section2.html">
+            
+                    
+                    4.2 前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.1 Docker-Compose部署</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="11-docker-compose&#x90E8;&#x7F72;">1.1 docker-compose&#x90E8;&#x7F72;</h1>
+<hr>
+<p>&#x6D1E;&#x5BDF;2 &#x4E00;&#x952E;&#x542F;&#x52A8;&#x7B80;&#x4ECB;</p>
+<h2 id="&#x91C7;&#x7528;docker-compose-&#x542F;&#x52A8;mysqlredis&#x670D;&#x52A1;">&#x91C7;&#x7528;docker-compose &#x542F;&#x52A8;mysql,redis,&#x670D;&#x52A1;</h2>
+<p>(1) &#x4F7F;&#x7528;Docker Compose</p>
+<ul>
+<li><a href="https://docs.docker.com/compose/install/" target="_blank">docker-compose</a></li>
+</ul>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/creditease-sec/insight2_docker.git
+<span class="hljs-built_in">cd</span> insight2_docker
+sudo docker-compose up
+</code></pre>
+<p>(2) &#x7CFB;&#x7EDF;&#x767B;&#x5F55;</p>
+<pre><code class="lang-bash">&#x5730;&#x5740;&#xFF1A;http://localhost:8000
+&#x5E10;&#x53F7;&#xFF1A;admin
+&#x5BC6;&#x7801;&#xFF1A;admin!Aa2020
+&#x540E;&#x53F0;&#x5730;&#x5740;&#xFF1A;http://localhost:8000/<span class="hljs-comment">#/admin</span>
+</code></pre>
+<p>(3) &#x7248;&#x672C;&#x66F4;&#x65B0;</p>
+<pre><code class="lang-bash">docker-compose pull &amp;&amp; docker-compose up
+or
+sudo docker-compose pull &amp;&amp; sudo docker-compose up
+</code></pre>
+<h3 id="docker-composeyml-&#x914D;&#x7F6E;&#x8BF4;&#x660E;">Docker-compose.yml &#x914D;&#x7F6E;&#x8BF4;&#x660E;</h3>
+<footer class="page-footer"><span class="copyright">Copyright Cesec Dev Team 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-07-07 15:06:31
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 1.快速开始">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section2.html" class="navigation navigation-next " aria-label="Next page: 1.2 版本更新">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.1 Docker-Compose部署","level":"1.2.1","depth":2,"next":{"title":"1.2 版本更新","level":"1.2.2","depth":2,"path":"chapter1/section2.md","ref":"chapter1/section2.md","articles":[]},"previous":{"title":"1.快速开始","level":"1.2","depth":1,"path":"chapter1/README.md","ref":"chapter1/README.md","articles":[{"title":"1.1 Docker-Compose部署","level":"1.2.1","depth":2,"path":"chapter1/section1.md","ref":"chapter1/section1.md","articles":[]},{"title":"1.2 版本更新","level":"1.2.2","depth":2,"path":"chapter1/section2.md","ref":"chapter1/section2.md","articles":[]},{"title":"1.3 源码部署","level":"1.2.3","depth":2,"path":"chapter1/section3.md","ref":"chapter1/section3.md","articles":[]},{"title":"1.4 服务配置","level":"1.2.4","depth":2,"path":"chapter1/section4.md","ref":"chapter1/section4.md","articles":[]},{"title":"1.5 从洞察1迁移数据","level":"1.2.5","depth":2,"path":"chapter1/section5.md","ref":"chapter1/section5.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hide-element","chapter-fold","code","back-to-top-button","splitter","-lunr","-search","search-pro","insert-logo","pageview-count","tbfed-pagefooter","-sharing","sharing-plus","github","edit-link"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright Cesec Dev Team 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/creditease-sec/insight2"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"edit-link":{"label":"编辑此页面","base":"https://github.com/CESRC-CreditEase/doc/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"images/logo.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/section1.md","mtime":"2020-07-07T07:06:31.502Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-07T08:06:51.825Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
